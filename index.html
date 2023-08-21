@@ -13,7 +13,7 @@
       <div class="flex items-center flex-col lg:flex-row gap-8 md:gap-1">
          <div class="flex-1 space-y-7 text-center">
             <h4 class="text-2xl font-medium">---SALE FEVER---</h4>
-            <h1 class="text-5xl font-bold">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
+            <h1 class="text-5xl font-bold">Purchase TK 200 or above & get <span class="text-[#E527B2]">20% off</span></h1>
             <br>
             <p class="font-semibold">Use Promo Code <button class="btn btn-sm btn-secondary">SELL200</button></p>
          </div>
@@ -27,8 +27,8 @@
          <div class="flex-1 space-y-16">
             <!-- Kitchenware Section -->
             <div>
-               <h2 class="text-2xl font-bold">Kitchenware</h2>
-               <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-around">
+               <h2 class="text-2xl font-bold mb-4">Kitchenware</h2>
+               <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-around gap-3">
                   <!-- K. Accessories card one -->
                   <div id="accessory-one" class="card bg-base-100 shadow-xl">
                      <figure class="px-10 pt-10">
@@ -84,8 +84,8 @@
             </div>
             <!-- Sportswear section -->
             <div>
-               <h2 class="text-2xl font-bold">Sportswear</h2>
-               <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-around">
+               <h2 class="text-2xl font-bold mb-4">Sportswear</h2>
+               <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-around gap-3">
                   <!-- Cap card -->
                   <div id="cap" class="card bg-base-100 shadow-xl">
                      <figure class="px-10 pt-10">
@@ -141,8 +141,8 @@
             </div>
             <!-- Furniture section -->
             <div>
-               <h2 class="text-2xl font-bold">Furniture</h2>
-               <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-around">
+               <h2 class="text-2xl font-bold mb-4">Furniture</h2>
+               <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-around gap-3">
                   <!-- Single Relax Chair Card -->
                   <div id="relax-chair" class="card bg-base-100 shadow-xl">
                      <figure class="px-10 pt-10">
@@ -197,12 +197,12 @@
                </div>
             </div>
          </div>
-         <!-- Puchase history and calcution -->
+         <!-- Purchase history and calculation -->
          <div class="w-full mx-auto md:w-1/4 space-y-10">
             <div>
                <h6 class="font-bold">Have coupon?</h6>
-               <input type="text" name="" id="" placeholder="coupon code">
-               <button class="btn btn-secondary" disabled>Apply</button>
+               <input type="text" name="" id="coupon-code" placeholder="coupon code">
+               <button id="btn-coupon" class="btn btn-secondary" disabled>Apply</button>
             </div>
             <!-- product history -->
             <div id="product-history">
@@ -210,11 +210,11 @@
             </div>
             <div>
                <p class="font-bold">Total Price: <span class="font-normal"><span id="total-price">00</span> TK</span></p>
-               <p class="font-bold">Discount: <span class="font-normal"><span>00</span> TK</span></p>
-               <p class="font-bold">Total: <span class="font-normal"><span>00</span> TK</span></p>
+               <p class="font-bold">Discount: <span class="font-normal"><span id="discount-value">00</span> TK</span></p>
+               <p class="font-bold">Total: <span class="font-normal"><span id="total-value">00</span> TK</span></p>
             </div>
             <div>
-               <button class="btn btn-secondary w-full" onclick="my_modal_5.showModal()">Make Purchase</button>
+               <button id="btn-purchase" class="btn btn-secondary w-full" onclick="my_modal_5.showModal()" disabled>Make Purchase</button>
                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                   <form method="dialog" class="modal-box">
                      <div class="card bg-base-100 shadow-xl">
