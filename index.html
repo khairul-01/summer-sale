@@ -9,8 +9,8 @@
    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-   <header class="bg-[#F9F6E2] min-h-screen px-60 py-32">
-      <div class="flex items-center">
+   <header class="bg-[#F9F6E2] min-h-screen px-8 md:px-36 lg:px-60 py-32">
+      <div class="flex items-center flex-col lg:flex-row gap-8 md:gap-1">
          <div class="flex-1 space-y-7 text-center">
             <h4 class="text-2xl font-medium">---SALE FEVER---</h4>
             <h1 class="text-5xl font-bold">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
@@ -22,13 +22,13 @@
          </div>
       </div>
    </header>
-   <main class="px-60 py-20 bg-[#F8F8F8]">
-      <section class="flex">
+   <main class="px-8 md:px-36 lg:px-60 py-20 bg-[#F8F8F8]">
+      <section class="flex flex-col md:flex-row gap-12 md:gap-2 lg:gap-6">
          <div class="flex-1 space-y-16">
             <!-- Kitchenware Section -->
             <div>
                <h2 class="text-2xl font-bold">Kitchenware</h2>
-               <div class="flex justify-around">
+               <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-around">
                   <!-- K. Accessories card one -->
                   <div id="accessory-one" class="card bg-base-100 shadow-xl">
                      <figure class="px-10 pt-10">
@@ -85,7 +85,7 @@
             <!-- Sportswear section -->
             <div>
                <h2 class="text-2xl font-bold">Sportswear</h2>
-               <div class="flex justify-around">
+               <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-around">
                   <!-- Cap card -->
                   <div id="cap" class="card bg-base-100 shadow-xl">
                      <figure class="px-10 pt-10">
@@ -142,7 +142,7 @@
             <!-- Furniture section -->
             <div>
                <h2 class="text-2xl font-bold">Furniture</h2>
-               <div class="flex justify-around">
+               <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-around">
                   <!-- Single Relax Chair Card -->
                   <div id="relax-chair" class="card bg-base-100 shadow-xl">
                      <figure class="px-10 pt-10">
@@ -198,7 +198,7 @@
             </div>
          </div>
          <!-- Puchase history and calcution -->
-         <div class="w-1/4 space-y-10">
+         <div class="w-full mx-auto md:w-1/4 space-y-10">
             <div>
                <h6 class="font-bold">Have coupon?</h6>
                <input type="text" name="" id="" placeholder="coupon code">
@@ -226,7 +226,7 @@
                           <p>You Purchase the Product</p>
                           <div class="modal-action">
                            <!-- if there is a button in form, it will close the modal -->
-                           <button class="btn btn-secondary">Go Home</button>
+                           <button id="go-home" class="btn btn-secondary">Go Home</button>
                          </div>
                         </div>
                       </div>

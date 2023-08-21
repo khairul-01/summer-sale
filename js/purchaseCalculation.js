@@ -47,3 +47,7 @@ setHistoryPrice('cates', 'cates-price', 'Sports Cates');
 setHistoryPrice('relax-chair', 'relax-chair-price', 'Single Relax Chair');
 setHistoryPrice('children-play', 'children-play-price', 'Children Play');
 setHistoryPrice('sofa', 'sofa-price', 'Flexible Sofa');
+
+document.getElementById('go-home').addEventListener('click', function() {
+   window.location.href = 'index.html';
+})
