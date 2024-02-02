@@ -1,7 +1,6 @@
 # summer-sale
 
-## Live Link:
-### (https://cowardly-income.surge.sh)
+## Live Link: ### (https://cowardly-income.surge.sh)
 
 ## [ Private Repo Link](https://classroom.github.com/a/uicCJkDQ)
 
